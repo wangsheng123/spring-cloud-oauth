@@ -77,6 +77,10 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         clients.withClientDetails(clientDetails());
     }
 
+    /**
+     * 从数据库加载clientDetail 默认client_secret admin
+     * @return
+     */
     @Bean
     public ClientDetailsService clientDetails() {
         return new JdbcClientDetailsService(dataSource);

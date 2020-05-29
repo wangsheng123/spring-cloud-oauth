@@ -11,9 +11,7 @@ spring:
 #      user-authorization-uri: http://127.0.0.1:11000/oauth/authorize    #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
 #      access-token-uri: http://127.0.0.1:11000/oauth/token              #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
 #    resource:
-#      #        user-info-uri: http://127.0.0.1:8000/auth/users #返回认证服务器检查
-#      #        prefer-token-info: false
-#      token-info-uri: http://127.0.0.1:11000/oauth/check_token          #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
+#      token-info-uri: http://127.0.0.1:11000/oauth/check_token          #每次请求资源服务去认证服务器解析token
 #      prefer-token-info: true
 
 

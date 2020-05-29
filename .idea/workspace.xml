@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147110b3-2178-42eb-9683-d21ed6be545a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/db/oauth-center.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AccessTokenJackson2Serializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/ClientDetailsRowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/DefaultClientDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/tmp/OAuthSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/tmp/OAuthWebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/Jackson2Mapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/JacksonMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/JsonMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/NotSupportedJsonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/AuthorizationServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/controller/TokenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="local" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -603,7 +599,7 @@
       <workItem from="1590541162415" duration="14045000" />
       <workItem from="1590627373736" duration="25662000" />
       <workItem from="1590714014067" duration="18094000" />
-      <workItem from="1590741694699" duration="3289000" />
+      <workItem from="1590741694699" duration="3815000" />
     </task>
     <task id="LOCAL-00001" summary="添加jwt存储token">
       <created>1590744399632</created>
@@ -612,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590744399632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加jwt存储token">
+      <created>1590745094135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590745094135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970872" />
-    <state x="387" y="114" key="CommitChangelistDialog2" timestamp="1590744390912">
+    <state x="387" y="114" key="CommitChangelistDialog2" timestamp="1590745092208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="387" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590744390912" />
+    <state x="387" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590745092208" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1590741203292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -707,10 +710,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590368258560" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590744720039">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590745592008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590744720039" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590745592008" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1590653010888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -719,10 +722,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="296" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590370567210" />
-    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1590400726363">
+    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1590745296191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590400726363" />
+    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590745296191" />
     <state x="330" y="220" key="new project wizard" timestamp="1590392141801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
