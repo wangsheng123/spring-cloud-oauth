@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: gateway
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: true
