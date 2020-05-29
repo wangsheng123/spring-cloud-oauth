@@ -76,13 +76,7 @@ public class TokenController {
        // redisTemplate.opsForValue().set("hello","auth");
         return "hello auth";
     }
-    @GetMapping("testMap")
-    public  Map<String, ?> testMap() {
 
-        Map<String,Object> map=new LinkedHashMap<>();
-        map.put("token","sdfsdas-1sdcfsx-sad");
-        return map;
-    }
     @GetMapping("header")
     public String header(@RequestHeader(value = "Authorization",required = false) String authorization, @RequestParam("username") String username) {
         return authorization+"  ==>  "+username;
