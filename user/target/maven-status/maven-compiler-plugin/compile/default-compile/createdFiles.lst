@@ -1,7 +1,0 @@
-com\ws\icloud\user\config\FeignBasicAuthRequestInterceptor.class
-com\ws\icloud\user\controller\UserController.class
-com\ws\icloud\user\config\NacosWeightRandomV2Rule.class
-com\ws\icloud\user\controller\TestController.class
-com\ws\icloud\user\client\AuthServiceClient.class
-com\ws\icloud\user\entity\JWT.class
-com\ws\icloud\user\UserApplication.class
