@@ -1,0 +1,11 @@
+
+nsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(äï«¢úÿÿÿÿ8ôëŒÏ¤.
+squid:UselessImportCheck"`Remove this unused import 'org.springframework.security.oauth2.common.DefaultOAuth2AccessToken'.(”ú©Âüÿÿÿÿ8ö£æØ¤.
+…squid:UselessImportCheck"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8Û¤è×¤.
+wsquid:UselessImportCheck"MRemove this unused import 'com.ws.icloud.auth.AccessTokenJackson2Serializer'.(‹¹Î8ÞÀ«Ù¤.
+|squid:S1488F"_Immediately return this expression instead of assigning it to the temporary variable "enhance".(ÒÈ€"8Ú”Šô¥.
+gsquid:UselessImportCheck"<Remove this unused import 'com.alibaba.fastjson.JSONObject'.(äýµ8ÉèÎ¤.
+Dsquid:S1452P"&Remove usage of generic wildcard type.(¾Ñø»8éˆ­Ù¤.
+„squid:UselessImportCheck"ZRemove this unused import 'org.springframework.security.oauth2.provider.token.TokenStore'.(òÉÖ8Ú”Šô¥.
+osquid:UselessImportCheck"DRemove this unused import 'com.ws.icloud.auth.DefaultClientDetails'.(±úž¡8…Ï½Ó¤.
+squid:UselessImportCheck"bRemove this unused import 'org.springframework.security.oauth2.provider.client.BaseClientDetails'.(â¶õ—8ºý•Ó¤.

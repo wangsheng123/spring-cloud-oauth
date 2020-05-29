@@ -1,0 +1,8 @@
+
+squid:UselessImportCheck"`Remove this unused import 'org.springframework.security.oauth2.common.DefaultOAuth2AccessToken'.(”ú©Âüÿÿÿÿ8‚Ÿû¥.
+rsquid:S3305/"TInject this field value directly into "clientDetails", the only method that uses it.(â–ŠĞ8üŒ¤û¥.
+squid:UselessImportCheck"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8öÈ¹û¥.
+isquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(äÅ¼ë8üŒ¤û¥.
+squid:UselessImportCheck"_Remove this unused import 'org.springframework.boot.autoconfigure.security.SecurityProperties'.(š©˜àÿÿÿÿÿ8‚Ÿû¥.
+ƒsquid:UselessImportCheck"SRemove this unused import 'com.ws.icloud.auth.service.impl.UserDetailsServiceImpl'.(²¤‹‡ûÿÿÿÿ8ƒ«´û¥.
+nsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ó‘Ô‚şÿÿÿÿ8­Š¦û¥.

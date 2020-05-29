@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://10.198.254.1:8848
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+        - id: user
+          uri: lb://user
+          order: 1000
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: default
+                fallbackUri: 'forward:/defaultfallback'
+        - id: auth
+          uri: lb://auth
+          order: 1001
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: default
+                fallbackUri: 'forward:/defaultfallback'

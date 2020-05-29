@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    druid:
+      # JDBC 配置(驱动类自动从url的mysql识别,数据源类型自动识别)
+      url: jdbc:mysql://59.110.138.14:3306/oauth-center?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: canal
+      password: ws@2019
+      driver-class-name:  com.mysql.jdbc.Driver
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://10.198.254.1:8848
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+  security:
+    user:
+      name: root
+      password: root
