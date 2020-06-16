@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.ws.icloud")
+@ComponentScan(basePackages = {"com.ws.icloud","com.ws.icloud.user"})
 @EnableFeignClients
 public class UserApplication {
 

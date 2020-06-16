@@ -2,6 +2,7 @@ package com.ws.icloud.auth.service.impl;
 
 import com.ws.icloud.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,9 +15,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private UserService userService;
 
 
+    @Autowired
+    private RedisTemplate<String,String > redisTemplate;
+
+
     @Override
     public UserDetails loadUserByUsername(String username)   {
-        User byUsername = userService.findByUsername(username);
+        UserDetails byUsername = userService.findByUsername(username);
         if (byUsername == null) {
             throw new UsernameNotFoundException("用户:" + username + ",不存在!");
         }

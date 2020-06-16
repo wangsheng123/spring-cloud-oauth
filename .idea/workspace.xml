@@ -1,26 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="147110b3-2178-42eb-9683-d21ed6be545a" name="Default Changelist" comment="">
+    <list default="true" id="7252ac60-5a71-4a46-9497-ecd8ae3d6995" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/token/RedisTemplateTokenStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/context/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/controller/ControllerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/dao/DataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/hystrix/HystrixException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/service/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/handler/GlobalExceptionTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/HttpResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/ViewResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/serializer/ResultCodeDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/CustomizeAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/RBACFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T025451.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030201.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030203.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030207.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030209-1.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030209.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030210.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030211-1.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030211.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030212.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030214.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030345.403.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030433.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042111.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042119.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042143.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042247.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042253.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044119.504.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044128.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044151.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044631.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052140-1.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052140.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052151.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052404.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052628.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052846.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T054207.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020216.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020558.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020600.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020601.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T034952.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T035100.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T114655.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T114717.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T115805.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T023025.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T023034.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T093742.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025617.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025643.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025712.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T032558.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T032732.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T033100.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T033103.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f755c933da703c3a89c611c6b4651525f698f5e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f755c933da703c3a89c611c6b4651525f698f5e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32386bbe2e0ac615a7c18a652524f1d09d6f08f3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32386bbe2e0ac615a7c18a652524f1d09d6f08f3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54b53c1113393891fe3b4f1b34ed313ea686b1a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54b53c1113393891fe3b4f1b34ed313ea686b1a0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97b579243b87e5994f789ef2d0d56b8e18c2c578" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97b579243b87e5994f789ef2d0d56b8e18c2c578" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a7d3cdb9cbebb74aa901720fc214aa58fb1864ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acaa585057035685542aca7dd3230378c6a87b2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acaa585057035685542aca7dd3230378c6a87b2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba80cbc2846c16438fbf52d7df02f22a644fd3a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d817bac3f42bae70db1da139d813b0d8ce20f264" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d817bac3f42bae70db1da139d813b0d8ce20f264" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de611e37f31f61414e30059c49784ff2a7084b1d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e781b9f70c76ca0514f3df9766c11b9cfe9e988b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e781b9f70c76ca0514f3df9766c11b9cfe9e988b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AccessTokenJackson2Serializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/ClientDetailsRowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/DefaultClientDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/tmp/OAuthSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/config/tmp/OAuthWebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AuthApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/Jackson2Mapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/JacksonMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/JsonMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/json/NotSupportedJsonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/AuthApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/AuthorizationServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/ResourceServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/controller/TokenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$ForbiddenException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$MethodNotAllowed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$ServerErrorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$UnauthorizedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/oauth-jwt.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/classes/test-jwt.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/target/test-classes/com/ws/icloud/auth/AuthApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/resource-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/resource-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/target/classes/com/ws/icloud/resource/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/target/classes/com/ws/icloud/resource/config/ResourceServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/config/NacosWeightRandomV2Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/config/NacosWeightRandomV2Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/META-INF/user.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/UserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/config/NacosWeightRandomV2Rule.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/config/NacosWeightRandomV2Rule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="icloud" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,30 +156,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="jwt" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="F:\project\icloud\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings - 副本.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
-  <component name="ProjectId" id="1cG1FBLFqovwH5XVA92I2HMEd1E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1cZq52Is3jawvsEzIq20YQE0ctR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -70,44 +176,36 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/web" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ws.icloud.user.controller" />
-      <recent name="com.ws.icloud.auth.config.tmp" />
-      <recent name="com.ws.icloud.auth.config" />
       <recent name="com.ws.icloud.user.config" />
-      <recent name="com.ws.icloud.resource.config" />
+      <recent name="com.ws.icloud.common.context" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\project\icloud\resource-client\src\main\resources" />
-      <recent name="F:\project\icloud\user\src\main\java\com\ws\icloud\user\entity" />
-      <recent name="F:\project\icloud\auth\src\main\resources" />
-      <recent name="F:\project\icloud\auth\src\main\java\com\ws\icloud\auth\config\tmp" />
-      <recent name="F:\project\icloud\gateway\src\main\java\com\ws\icloud\gateway" />
+      <recent name="F:\project\icloud\common-starter\src\main\java\com\ws\icloud\common\web" />
+      <recent name="F:\project\icloud\common-starter\src\main\java\com\ws\icloud\common" />
+      <recent name="F:\project\icloud\common-starter\src\main\resources" />
+      <recent name="F:\project\icloud\common-starter\src\main\java" />
+      <recent name="F:\project\icloud" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080/user/test/hello" />
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDetail" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA3NTUxMzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiYjdkYjhiMDYtYjQ4OS00YWE1LWFlODYtMTE3MmI3ZTBkNzU2IiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.CYWx62RoE_tg5CvW9dhIP5x45hHBjRuRR8Pep0hA0CLRbzGT_nX73M3ufdto659UKe0McPgN9kAzMFq5e4eA5s-E3wWoCsS6APDTSQ3CqW2l4L_yj0-i7ZJQJEHfa_ppWgTdj3PzmQx07cP26sV-B_wL0OG7FpmCEfERqSviO3X_YnDyhyDDVVSznW3EUULYVD5elpFmPQPjRgHr5oL3GHQ0_W0WykibgoMMH0IhvNL3UnNP_AjeOozJL1V3P7E4GpISAZMVVaGAigb9YQKXzIne0PxjK4iURZqHXtVANh6qcUWQ2iL6a3HCPBw783ZW-rGOQVunbzUHfVSR0iSxeQ" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMTc2NDQsInVzZXJfbmFtZSI6ImFtaW4iLCJqdGkiOiIyMzE0NjUxZC0yZDhlLTRkZGEtYjliMy1hN2FkM2E5ZjZkOTMiLCJjbGllbnRfaWQiOiJjbGllbnRfMSIsInNjb3BlIjpbImFsbCJdfQ.x-f2f2_Vtm_fH9dXJMF3Cdb59YGtXCW5e4qvXfdXL4eR2tfKs3Qindg7_RmkQlhIKoGjj9WnalwEC98Eby7_yMhV5TznYln11eK_W-NAq6ruZtc7LZGSmWjmeHLC5I0CAepR6kWjZTxLeUc76anFkA1N4yt_q9BLl-kzjvigT5N9PO4hd946O352qQyHAtIgU8r34IKCFzit6zXiOIDR4skyEMetUAnTEDUmiQNmzX-8kdbLLCz8JxQ9-1NO1sZsKfWv7ah0ImNLIZhfX2xyTedAxJY__gjpxKisBm5yaJ0LwT87074u_VcxD-ZV6YLCAgCXmYAz9mQ2AjFUGpBwDA" />
               </KeyValuePair>
             </list>
           </option>
@@ -115,29 +213,187 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
-          <option name="biscuits">
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/login" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
             <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="amin" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="admin" />
+              </KeyValuePair>
             </list>
           </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/hello" />
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDetail" />
+          <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA3NTUxMzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiYjdkYjhiMDYtYjQ4OS00YWE1LWFlODYtMTE3MmI3ZTBkNzU2IiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.CYWx62RoE_tg5CvW9dhIP5x45hHBjRuRR8Pep0hA0CLRbzGT_nX73M3ufdto659UKe0McPgN9kAzMFq5e4eA5s-E3wWoCsS6APDTSQ3CqW2l4L_yj0-i7ZJQJEHfa_ppWgTdj3PzmQx07cP26sV-B_wL0OG7FpmCEfERqSviO3X_YnDyhyDDVVSznW3EUULYVD5elpFmPQPjRgHr5oL3GHQ0_W0WykibgoMMH0IhvNL3UnNP_AjeOozJL1V3P7E4GpISAZMVVaGAigb9YQKXzIne0PxjK4iURZqHXtVANh6qcUWQ2iL6a3HCPBw783ZW-rGOQVunbzUHfVSR0iSxeQ" />
+                <option name="value" value="Bearer b8d92481-e7ce-422a-8b7e-bbaaa82377e7" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDetail" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMTMyODIsInVzZXJfbmFtZSI6ImFtaW4iLCJqdGkiOiJiMzdlY2M4Zi1iNDk5LTQwYzctYmQ3Mi05ODhkZjA2MTJlM2EiLCJjbGllbnRfaWQiOiJjbGllbnRfMSIsInNjb3BlIjpbImFsbCJdfQ.zf7gZVEEPlZ4XhpaKjMVA04rpWeFcEvBCTDgbH03aDsju6pN1Z71mtaR8EAL2opSwg3v009NbWPrZkJcmpU1C-zF3rTY5un7CkAJpj6DYHUweTSZlp2mghtXXvzxm-pF5V-KVgDkbQn3oyWUZk7rb6GcePb7OrHIyDcHClp6QRYOV-a7YBTrboA3vRLKWNpE2KFiaZfFsvFyOT3Ttordwk_ZvklPeU6bVt8HdDF6jB6H_qIFXNazz4W2oKYaI_JS9RuFnNNR0o6QskcDIHHeepaM-JooIJh03QN041Xshpn8xxMhT7w5h0I2_etqsITSCk21V_bSFEPTMtX4bjkmrA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDetail" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDeatil" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/user/userDeatil" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/test/testMap" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/user/test/testMap" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/user/test/testMap" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/user/test/testMap" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/user/test/authDetail" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/user/user/authDetail" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIzMDczNzMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiOGYwMThmNzktZWE4Ny00MmM3LTlkNmQtZjI1MDg5OTMwOWZkIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.V3skFnvrW9Bd_wnD4_esl0JAkC64UVdKOCFUcF3R8bGH52tfsVN0InDhIyDml8K1cQ4YACSPBPKT673IYshmOSALDzXAHM8a8vRQrn1tNToIfKKBUNpT4i3HcYPl5kuqXYYGT8gAtpB_pb_2gvFROZo83zF6dwdOzhqEbopZhme2PeUt30vOGE_2XmCLz2KAKcHGwcnnKRVCWuYl6jOT2CZvkxSFbOGqwapkOwNkyfpcGV1jifOywq-eAq1811nF0xxCpbyXo3lh01HUGUVTdN1BkWxcVQaoIx5gYe9UizqexmQYjtKggat2_MeHyH-QoBPHxUMpkigwzpZHHFIKDg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:9001/user/login" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="amin" />
               </KeyValuePair>
               <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
+                <option name="key" value="password" />
+                <option name="value" value="admin" />
               </KeyValuePair>
             </list>
           </option>
@@ -147,13 +403,60 @@
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080/user/test/hello" />
+          <option name="urlBase" value="http://localhost:9001/user/authDetail" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:11000/oauth/token" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Basic Y2xpZW50XzE6YWRtaW4=" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="admin" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="admin" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/user/test/authDetail" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA1NzczMDUsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiZGMxNTA4NTUtNTNlNC00N2JlLWIzOWItZWI4ODc2MWM1YzhhIiwiY2xpZW50X2lkIjoidGVzdHR3byIsInNjb3BlIjpbImFsbCJdfQ.MKL0B4FLX_nNOB75ryX3RbwRs0UK-zY0gLtuxPCTmlTK0AgM2XVdROXN4De7VrZsgTuRhqbjUSWu2d2QAqPoui71qlrED4LNSY-YUlFJZBZwhjVfSJ2CjeFYlS_gF_li9ZkNqT3nedOmJPIizrk0ydjL4JknWioPk7PA3U6rJSzD3xL9pc1NNGlRCkz_phRVm_WahwBAF3qM_mEjeHoi91M-jRn_m6u0uS7CJ7TNp1dj_bZZK8Ie36hTNNWrIBrGraTGRmYVOpJU9bt3ViUOvISQ0oSuTppDVeYV9Zdd0VGmgY68-ga0IbySHdUWI5AkWOfP4pPb1wSRAziU1gzDyg" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTIyMjY0OTMsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiMzllYTlmYjAtMjNhZC00MTI0LTgxNjYtZjM3OGM3ZmVhMjdjIiwiY2xpZW50X2lkIjoiY2xpZW50XzEiLCJzY29wZSI6WyJhbGwiXX0.2EZcHjjUKodqwWKX-MO_gIkut5N_4AaQt9mSTylwjMylodj7NLlDkgM3IXA2e3RgFWcjcsDU0gbrM3qGBcxszHp8_-FGIlcxw0BadkY7yIAUmqcubdQqDkn7n68hEaNV4Vmyv0jEckPra4ToKzt-x6ipYroU70IOV6Tm6TKoH0PCRatKhbvxak3QPRuDS2wVwmoSNqza-WmWAXv9yyiDPvbLyh2Owz-V_RcA-fou1Va8r1J5IA8ybpPaPdl8nwekuYxnGFNuEJ3r2cbSFCE-2B6Ib3DnFS3sCdOAn1TMvfTsh0x1C8b0IBJjOTSatd0x5GMfgjcTPFQyisqAT5ycPA" />
               </KeyValuePair>
               <KeyValuePair>
                 <option name="key" value="Cache-Control" />
@@ -161,6 +464,36 @@
               </KeyValuePair>
             </list>
           </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="multipart/form-data; boundary=WebAppBoundary" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9001/test/authDetail" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9001/test/task" />
+          <option name="urlPath" value="" />
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
@@ -184,69 +517,12 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA1NzczMDUsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiZGMxNTA4NTUtNTNlNC00N2JlLWIzOWItZWI4ODc2MWM1YzhhIiwiY2xpZW50X2lkIjoidGVzdHR3byIsInNjb3BlIjpbImFsbCJdfQ.MKL0B4FLX_nNOB75ryX3RbwRs0UK-zY0gLtuxPCTmlTK0AgM2XVdROXN4De7VrZsgTuRhqbjUSWu2d2QAqPoui71qlrED4LNSY-YUlFJZBZwhjVfSJ2CjeFYlS_gF_li9ZkNqT3nedOmJPIizrk0ydjL4JknWioPk7PA3U6rJSzD3xL9pc1NNGlRCkz_phRVm_WahwBAF3qM_mEjeHoi91M-jRn_m6u0uS7CJ7TNp1dj_bZZK8Ie36hTNNWrIBrGraTGRmYVOpJU9bt3ViUOvISQ0oSuTppDVeYV9Zdd0VGmgY68-ga0IbySHdUWI5AkWOfP4pPb1wSRAziU1gzDyg" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080/user/test/task" />
+          <option name="urlBase" value="http://localhost:8080/user/test/authDetail" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/authDetail" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
                 <option name="key" value="Authorization" />
                 <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA1NzczMDUsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiZGMxNTA4NTUtNTNlNC00N2JlLWIzOWItZWI4ODc2MWM1YzhhIiwiY2xpZW50X2lkIjoidGVzdHR3byIsInNjb3BlIjpbImFsbCJdfQ.MKL0B4FLX_nNOB75ryX3RbwRs0UK-zY0gLtuxPCTmlTK0AgM2XVdROXN4De7VrZsgTuRhqbjUSWu2d2QAqPoui71qlrED4LNSY-YUlFJZBZwhjVfSJ2CjeFYlS_gF_li9ZkNqT3nedOmJPIizrk0ydjL4JknWioPk7PA3U6rJSzD3xL9pc1NNGlRCkz_phRVm_WahwBAF3qM_mEjeHoi91M-jRn_m6u0uS7CJ7TNp1dj_bZZK8Ie36hTNNWrIBrGraTGRmYVOpJU9bt3ViUOvISQ0oSuTppDVeYV9Zdd0VGmgY68-ga0IbySHdUWI5AkWOfP4pPb1wSRAziU1gzDyg" />
               </KeyValuePair>
@@ -256,233 +532,6 @@
               </KeyValuePair>
             </list>
           </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/getName" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA1NzczMDUsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iXSwianRpIjoiZGMxNTA4NTUtNTNlNC00N2JlLWIzOWItZWI4ODc2MWM1YzhhIiwiY2xpZW50X2lkIjoidGVzdHR3byIsInNjb3BlIjpbImFsbCJdfQ.MKL0B4FLX_nNOB75ryX3RbwRs0UK-zY0gLtuxPCTmlTK0AgM2XVdROXN4De7VrZsgTuRhqbjUSWu2d2QAqPoui71qlrED4LNSY-YUlFJZBZwhjVfSJ2CjeFYlS_gF_li9ZkNqT3nedOmJPIizrk0ydjL4JknWioPk7PA3U6rJSzD3xL9pc1NNGlRCkz_phRVm_WahwBAF3qM_mEjeHoi91M-jRn_m6u0uS7CJ7TNp1dj_bZZK8Ie36hTNNWrIBrGraTGRmYVOpJU9bt3ViUOvISQ0oSuTppDVeYV9Zdd0VGmgY68-ga0IbySHdUWI5AkWOfP4pPb1wSRAziU1gzDyg" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 538f3676-9529-4d37-adaa-abc7aa62c58c" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer f30fffa8-e168-4879-a0f2-e84cd53bee20" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer f30fffa8-e168-4879-a0f2-e84cd53bee20" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/user/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 20a0a472-1831-4b01-84ba-034177a1611a" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/" />
-                <option name="value" value="45C0E4956E6FF3CE0B80F4D96D93435C" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 20a0a472-1831-4b01-84ba-034177a1611a" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Bearer" />
-                <option name="value" value="20a0a472-1831-4b01-84ba-034177a1611a" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth/test/hello" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
@@ -496,14 +545,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
-    <configuration name="rest-api_4#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="rest-api_5#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_5.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="HTTP Request.rest-api_6#4">
     <configuration name="rest-api_6#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_6.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_6#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_6.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_6#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_6.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_6#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_6.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -513,20 +565,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ws.icloud.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ws.icloud.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="user" />
       <extension name="coverage">
         <pattern>
@@ -535,26 +581,17 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ws.icloud.user.UserApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="HTTP Request.rest-api_4#1" />
-      <item itemvalue="HTTP Request.rest-api_5#1" />
-      <item itemvalue="HTTP Request.rest-api_6#1" />
-      <item itemvalue="Spring Boot.AuthApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="HTTP Request.rest-api_6#4" />
         <item itemvalue="HTTP Request.rest-api_6#1" />
-        <item itemvalue="HTTP Request.rest-api_5#1" />
-        <item itemvalue="HTTP Request.rest-api_4#1" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="HTTP Request.rest-api_6#5" />
+        <item itemvalue="HTTP Request.rest-api_6#3" />
       </list>
     </recent_temporary>
   </component>
@@ -562,7 +599,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.26150516" />
+          <option name="contentProportion" value="0.14564158" />
           <treeState>
             <expand>
               <path>
@@ -586,31 +623,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="147110b3-2178-42eb-9683-d21ed6be545a" name="Default Changelist" comment="" />
-      <created>1590140009309</created>
+      <changelist id="7252ac60-5a71-4a46-9497-ecd8ae3d6995" name="Default Changelist" comment="" />
+      <created>1590746276404</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1590140009309</updated>
-      <workItem from="1590140015504" duration="351000" />
-      <workItem from="1590140377306" duration="478000" />
-      <workItem from="1590140863399" duration="190000" />
-      <workItem from="1590141060195" duration="192000" />
-      <workItem from="1590141258806" duration="351000" />
-      <workItem from="1590141615943" duration="854000" />
-      <workItem from="1590196020844" duration="18127000" />
-      <workItem from="1590368141583" duration="27123000" />
-      <workItem from="1590482889806" duration="3676000" />
-      <workItem from="1590541162415" duration="14045000" />
-      <workItem from="1590627373736" duration="25662000" />
-      <workItem from="1590714014067" duration="18094000" />
-      <workItem from="1590741694699" duration="3289000" />
+      <updated>1590746276404</updated>
+      <workItem from="1590746278334" duration="817000" />
+      <workItem from="1590972992983" duration="594000" />
+      <workItem from="1591154162731" duration="2307000" />
+      <workItem from="1591232521394" duration="578000" />
+      <workItem from="1592204442303" duration="4776000" />
+      <workItem from="1592274954470" duration="9372000" />
+      <workItem from="1592292776617" duration="7529000" />
     </task>
-    <task id="LOCAL-00001" summary="添加jwt存储token">
-      <created>1590744399632</created>
+    <task id="LOCAL-00001" summary="删除target文件夹">
+      <created>1590746351352</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1590744399632</updated>
+      <updated>1590746351352</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -619,122 +650,114 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加jwt存储token" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加jwt存储token" />
+    <MESSAGE value="删除target文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除target文件夹" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590647367314">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592207653046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590647367314" />
-    <state x="693" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590550415583">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592207653046" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1592297463363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590550415583" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1590661098421">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592297463363" />
+    <state x="559" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592276377439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590661098421" />
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590744970872">
+    <state x="559" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592276377439" />
+    <state x="396" y="112" key="CommitChangelistDialog2" timestamp="1590746350056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970872" />
-    <state x="387" y="114" key="CommitChangelistDialog2" timestamp="1590744390912">
+    <state x="396" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590746350056" />
+    <state width="520" height="466" key="DebuggerActiveHint" timestamp="1592299128829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="387" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590744390912" />
-    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1590741203292">
+    <state width="520" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1592299128829" />
+    <state x="196" y="85" key="DiffContextDialog" timestamp="1592299578286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1590741203292" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1590744256828">
+    <state x="196" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592299578286" />
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1592300825592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590744256828" />
-    <state width="1363" height="250" key="GridCell.Tab.0.bottom" timestamp="1590744970921">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592300825592" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1592300825592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970921" />
-    <state width="1363" height="250" key="GridCell.Tab.0.center" timestamp="1590744970921">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592300825592" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1592300825591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970921" />
-    <state width="1363" height="250" key="GridCell.Tab.0.left" timestamp="1590744970921">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592300825591" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1592300825592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970921" />
-    <state width="1363" height="250" key="GridCell.Tab.0.right" timestamp="1590744970921">
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592300825592" />
+    <state width="1577" height="419" key="GridCell.Tab.1.bottom" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970921" />
-    <state width="1363" height="250" key="GridCell.Tab.1.bottom" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.1.center" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.1.center" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.1.left" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.1.left" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.1.right" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.1.right" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.2.bottom" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.2.bottom" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.2.center" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.2.center" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.2.left" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.2.left" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state width="1577" height="419" key="GridCell.Tab.2.right" timestamp="1592299661310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state width="1363" height="250" key="GridCell.Tab.2.right" timestamp="1590744970922">
+    <state width="1577" height="419" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592299661310" />
+    <state x="740" y="229" key="RollbackChangesDialog" timestamp="1592299579214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1363" height="250" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590744970922" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1590649276038">
+    <state x="740" y="229" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592299579214" />
+    <state x="440" y="93" key="SettingsEditor" timestamp="1590746304346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590649276037" />
-    <state x="461" y="151" key="SettingsEditor" timestamp="1590368258560">
+    <state x="440" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590746304346" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1590746352542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590368258560" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590744720039">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590746352542" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592299606506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590744720039" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1590653010888">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592299606506" />
+    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1592296024181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1590653010888" />
-    <state x="759" y="296" key="chooseDestDirectoryDialog" timestamp="1590370567210">
+    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592296024181" />
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592207731487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="296" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590370567210" />
-    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1590400726363">
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592207731487" />
+    <state x="330" y="220" key="new project wizard" timestamp="1592209552624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590400726363" />
-    <state x="330" y="220" key="new project wizard" timestamp="1590392141801">
+    <state x="330" y="220" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592209552624" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592298998420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="330" y="220" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590392141801" />
-    <state x="616" y="235" key="run.anything.popup" timestamp="1590714714055">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590714714055" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590737788433">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590737788433" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592298998420" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -778,6 +801,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-loadbalancer/2.2.2.RELEASE/spring-cloud-loadbalancer-2.2.2.RELEASE-sources.jar!/org/springframework/cloud/loadbalancer/blocking/client/BlockingLoadBalancerClient.java</url>
           <line>79</line>
           <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.0.RELEASE/spring-security-oauth2-2.3.0.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

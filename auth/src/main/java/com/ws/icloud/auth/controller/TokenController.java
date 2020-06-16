@@ -45,7 +45,7 @@ public class TokenController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Autowired
+    @Autowired(required = false)
     private JwtAccessTokenConverter jwtAccessTokenConverter;
 
     // 扩展 默认的 ClientDetailsService, 增加逻辑删除判断( status = 1)

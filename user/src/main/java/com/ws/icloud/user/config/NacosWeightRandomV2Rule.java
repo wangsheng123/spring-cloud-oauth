@@ -14,6 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.stereotype.Component;
 
+/**
+ * @desc nacos负载均衡权重功能
+ */
 @Slf4j
 //@Component
 public class NacosWeightRandomV2Rule extends AbstractLoadBalancerRule {

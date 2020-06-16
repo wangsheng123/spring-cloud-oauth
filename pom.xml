@@ -19,6 +19,7 @@
         <module>user</module>
         <module>auth</module>
         <module>resource-client</module>
+        <module>common-starter</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -28,7 +29,6 @@
 
 
     <dependencies>
-
     </dependencies>
 
     <dependencyManagement>
