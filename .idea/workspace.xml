@@ -1,145 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7252ac60-5a71-4a46-9497-ecd8ae3d6995" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/token/RedisTemplateTokenStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/context/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/controller/ControllerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/dao/DataAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/hystrix/HystrixException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/exception/service/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/handler/GlobalExceptionTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/HttpResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/response/ViewResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/java/com/ws/icloud/common/serializer/ResultCodeDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/CustomizeAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/RBACFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T025451.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030201.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030203.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030207.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030209-1.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030209.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030210.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030211-1.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030211.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030212.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030214.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030345.403.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T030433.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042111.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042119.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042143.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042247.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T042253.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044119.504.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044128.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044151.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T044631.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052140-1.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052140.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052151.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052404.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052628.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T052846.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-25T054207.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020216.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020558.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020600.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T020601.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T034952.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T035100.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T114655.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T114717.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-27T115805.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T023025.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T023034.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-28T093742.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025617.503.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025643.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T025712.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T032558.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T032732.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T033100.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-05-29T033103.200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f755c933da703c3a89c611c6b4651525f698f5e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f755c933da703c3a89c611c6b4651525f698f5e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32386bbe2e0ac615a7c18a652524f1d09d6f08f3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32386bbe2e0ac615a7c18a652524f1d09d6f08f3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54b53c1113393891fe3b4f1b34ed313ea686b1a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54b53c1113393891fe3b4f1b34ed313ea686b1a0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97b579243b87e5994f789ef2d0d56b8e18c2c578" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97b579243b87e5994f789ef2d0d56b8e18c2c578" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a7d3cdb9cbebb74aa901720fc214aa58fb1864ea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acaa585057035685542aca7dd3230378c6a87b2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acaa585057035685542aca7dd3230378c6a87b2e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba80cbc2846c16438fbf52d7df02f22a644fd3a8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d817bac3f42bae70db1da139d813b0d8ce20f264" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d817bac3f42bae70db1da139d813b0d8ce20f264" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de611e37f31f61414e30059c49784ff2a7084b1d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e781b9f70c76ca0514f3df9766c11b9cfe9e988b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e781b9f70c76ca0514f3df9766c11b9cfe9e988b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="7252ac60-5a71-4a46-9497-ecd8ae3d6995" name="Default Changelist" comment="添加common">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/auth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/AuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/ws/icloud/auth/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/AuthApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/AuthorizationServerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/ResourceServerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/controller/TokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$ForbiddenException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$MethodNotAllowed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$ServerErrorException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator$UnauthorizedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/error/MssWebResponseExceptionTranslator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/impl/UserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/ws/icloud/auth/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/oauth-jwt.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/test-jwt.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/test-classes/com/ws/icloud/auth/AuthApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/resource-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/resource-client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/src/main/java/com/ws/icloud/resource/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/target/classes/com/ws/icloud/resource/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/resource-client/target/classes/com/ws/icloud/resource/config/ResourceServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/config/NacosWeightRandomV2Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/config/NacosWeightRandomV2Rule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/ws/icloud/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/META-INF/user.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/config/NacosWeightRandomV2Rule.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/config/NacosWeightRandomV2Rule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/ws/icloud/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -634,7 +498,7 @@
       <workItem from="1591232521394" duration="578000" />
       <workItem from="1592204442303" duration="4776000" />
       <workItem from="1592274954470" duration="9372000" />
-      <workItem from="1592292776617" duration="7529000" />
+      <workItem from="1592292776617" duration="8086000" />
     </task>
     <task id="LOCAL-00001" summary="删除target文件夹">
       <created>1590746351352</created>
@@ -643,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590746351352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加common">
+      <created>1592300949035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592300949035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +522,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除target文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除target文件夹" />
+    <MESSAGE value="添加common" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加common" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592207653046">
@@ -666,10 +538,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="559" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592276377439" />
-    <state x="396" y="112" key="CommitChangelistDialog2" timestamp="1590746350056">
+    <state x="396" y="112" key="CommitChangelistDialog2" timestamp="1592301406324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="396" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590746350056" />
+    <state x="396" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592301406324" />
     <state width="520" height="466" key="DebuggerActiveHint" timestamp="1592299128829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -734,10 +606,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590746304346" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1590746352542">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1592300958207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590746352542" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592300958207" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592299606506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
