@@ -1,27 +1,18 @@
 package com.ws.icloud.user.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ws.icloud.auth.api.model.Account;
 import com.ws.icloud.common.context.UserContext;
 import com.ws.icloud.common.response.ViewResponse;
-import com.ws.icloud.user.client.AuthServiceClient;
-import com.ws.icloud.user.entity.JWT;
+import com.ws.icloud.auth.api.client.AuthServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
-import org.springframework.security.oauth2.provider.token.TokenStore;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
-import javax.swing.text.View;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/user")
@@ -30,6 +21,8 @@ public class UserController {
     @Autowired
     private AuthServiceClient authServiceClient;
 
+    @Autowired
+    ObjectMapper objectMapper;
     @PostMapping("login")
     public Object login(String username, String password) {
         //client_1:admin base编码
@@ -38,9 +31,8 @@ public class UserController {
         //return authServiceClient.header(basic,username);
     }
     @PostMapping("userDetail")
-    public ViewResponse userDetail() {
+    public ViewResponse userDetail()  {
         Authentication authentication = UserContext.getAuthentication();
-        User account = (User) UserContext.getAccount();
-        return ViewResponse.success(UserContext.getAccount());
+        return ViewResponse.success(authentication.getPrincipal());
     }
 }

@@ -1,3 +1,4 @@
+/*
 package com.ws.icloud.resource.token;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,4 +38,4 @@ public class JwtTokenStoreConfig {
         converter.setVerifierKey(publicKey);
         return converter;
     }
-}
+}*/

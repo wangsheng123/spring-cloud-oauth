@@ -1,14 +1,0 @@
-
-esquid:UselessImportCheck":Remove this unused import 'com.ws.icloud.user.entity.JWT'.(î×¼º8•ÌµŞ«.
-…squid:UselessImportCheck"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8•ÌµŞ«.
-Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8•ÌµŞ«.
-asquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—8•ÌµŞ«.
-osquid:UselessImportCheck"DRemove this unused import 'java.util.concurrent.ExecutionException'.(¡£ØÍ8•ÌµŞ«.
-zsquid:UselessImportCheck"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8•ÌµŞ«.
-squid:UselessImportCheck"^Remove this unused import 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler'.(¦åğ·şÿÿÿÿ8•ÌµŞ«.
-isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(«ìóÄ8•ÌµŞ«.
-ssquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8•ÌµŞ«.
-„squid:UselessImportCheck
-"ZRemove this unused import 'org.springframework.security.oauth2.provider.token.TokenStore'.(òÉÖ8•ÌµŞ«.
-dsquid:UselessImportCheck"4Remove this unused import 'java.util.LinkedHashMap'.(ò†ŠŞùÿÿÿÿ8•ÌµŞ«.
-‡squid:UselessImportCheck	"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë8•ÌµŞ«.

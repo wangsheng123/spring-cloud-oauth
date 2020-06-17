@@ -30,8 +30,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     TokenStore tokenStore;
 
-    @Autowired
-    JwtAccessTokenConverter tokenConverter;
 
     @Autowired
     RBACFilter rbacFilter;
@@ -49,21 +47,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .exceptionHandling().accessDeniedHandler(customizeAccessDeniedHandler).and()
                 .httpBasic();
 
-    }
-
-  /*  @Override
-    public void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().requestMatcher(new OAuth2RequestedMatcher())
-                .authorizeRequests()
-                .antMatchers("/test/**").permitAll()
-                .anyRequest().authenticated().and()
-                .httpBasic();
-
-    }
-
-    @Override
-    public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-        super.configure(resources);
     }
 
    /**

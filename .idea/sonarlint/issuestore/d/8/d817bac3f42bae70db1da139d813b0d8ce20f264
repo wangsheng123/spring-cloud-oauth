@@ -1,6 +1,0 @@
-
-hsquid:UselessImportCheck"FRemove this unused import 'org.springframework.core.annotation.Order'.(ÖŽ¨æ
-gsquid:UselessImportCheck"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ
-Bsquid:S1185"(Remove this method to simply inherit it.(ìýö‘ùÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þŽŽýÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾áõš

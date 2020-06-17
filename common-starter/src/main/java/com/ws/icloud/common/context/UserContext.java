@@ -4,12 +4,8 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
-import com.ws.icloud.common.exception.service.ServiceException;
 import java.util.Collection;
-import java.util.Objects;
-
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserContext {
 
