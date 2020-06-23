@@ -39,4 +39,25 @@ public class UserServiceImpl implements UserService {
         account.setAuthorities(authorities);
         return account;
     }
+    /**
+     * 测试写死账号
+     * @param phone
+     * @return
+     */
+    @Override
+    public UserDetails loadUserByPhone(String phone) {
+        List<GrantedAuthority> authorities=new ArrayList<>();
+        SimpleGrantedAuthority simpleGrantedAuthority=new SimpleGrantedAuthority("ADMIN");
+        authorities.add(simpleGrantedAuthority);
+        Account account=new Account();
+        account.setAccount(phone);
+        account.setPassword(passwordEncoder.encode("admin2号"));
+        account.setAccountId(10001);
+        account.setAccountNonLocked(true);
+        account.setAccountNonExpired(true);
+        account.setCredentialsNonExpired(true);
+        account.setEnabled(true);
+        account.setAuthorities(authorities);
+        return account;
+    }
 }

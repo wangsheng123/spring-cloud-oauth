@@ -10,4 +10,6 @@ public interface UserService {
 
     @GetMapping("user/findByUsername/{username}")
     UserDetails findByUsername(@PathVariable("username") String username);
+
+    UserDetails loadUserByPhone(String phone);
 }

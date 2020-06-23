@@ -1,12 +1,13 @@
 package com.ws.icloud.gateway;
 
+import com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class GatewayApplication {
 
     public static void main(String[] args) {

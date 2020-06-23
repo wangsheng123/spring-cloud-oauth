@@ -2,6 +2,8 @@
 package com.ws.icloud.auth.config;
 
 import com.ws.icloud.auth.error.MssWebResponseExceptionTranslator;
+import com.ws.icloud.auth.grant.CustomTokenGranterFactory;
+import com.ws.icloud.auth.grant.SmsCodeTokenGranter;
 import com.ws.icloud.auth.token.RedisTemplateTokenStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -18,16 +20,24 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.CompositeTokenGranter;
+import org.springframework.security.oauth2.provider.OAuth2RequestFactory;
+import org.springframework.security.oauth2.provider.TokenGranter;
+import org.springframework.security.oauth2.provider.client.ClientCredentialsTokenGranter;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
+import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;
+import org.springframework.security.oauth2.provider.code.AuthorizationCodeTokenGranter;
 import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
 import org.springframework.security.oauth2.provider.error.WebResponseExceptionTranslator;
+import org.springframework.security.oauth2.provider.implicit.ImplicitTokenGranter;
+import org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter;
+import org.springframework.security.oauth2.provider.refresh.RefreshTokenGranter;
+import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Configuration
 @EnableAuthorizationServer
@@ -86,9 +96,21 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         endpoints.tokenServices(defaultTokenServices()); //负责token的创建刷新等crud操作
         endpoints.exceptionTranslator(webResponseExceptionTranslator());//认证异常
 
-
+        setDefaultTokenGranters(endpoints);
     }
-
+    /**
+     * 程序支持的授权类型
+     *
+     * @return
+     */
+    private void setDefaultTokenGranters(AuthorizationServerEndpointsConfigurer endpoints) {
+        AuthorizationServerTokenServices tokenService = endpoints.getTokenServices();
+        CustomTokenGranterFactory tokenGranterFactory = new CustomTokenGranterFactory(authenticationManager, tokenService, clientDetails());
+        List<TokenGranter> list = new ArrayList<>();
+        list.add(endpoints.getTokenGranter());
+        list.add(tokenGranterFactory.buildTokenGranter("sms_code"));
+        endpoints.tokenGranter(new CompositeTokenGranter(list));
+    }
 
     /**
      * 负责token生成

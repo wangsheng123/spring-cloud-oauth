@@ -11,7 +11,7 @@ security:
     #      user-authorization-uri: http://127.0.0.1:8080/auth/oauth/authorize    #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
     #      access-token-uri: http://127.0.0.1:8080/auth/token              #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
     resource:
-      token-info-uri: 'http://127.0.0.1:11000/token/oauth/check_token' #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
+      token-info-uri: 'http://127.0.0.1:11000/oauth/check_token' #直接配置认证中心端口(http://127.0.0.1:11000/oauth/authorize)，也可以配置网关端口
 
 logging:
   level:

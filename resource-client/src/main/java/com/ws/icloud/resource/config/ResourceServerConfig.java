@@ -42,6 +42,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/test/**").permitAll()
                 .antMatchers("/user/login").permitAll()
+                .antMatchers("/public/**").permitAll()
                 .anyRequest().authenticated().and()
                 .addFilterAfter(rbacFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling().accessDeniedHandler(customizeAccessDeniedHandler).and()

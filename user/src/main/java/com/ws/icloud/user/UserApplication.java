@@ -1,12 +1,12 @@
 package com.ws.icloud.user;
 
+import com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
-
-@SpringBootApplication
+@SpringBootApplication(exclude = {})
 @ComponentScan(basePackages = {"com.ws.icloud"})
 @EnableFeignClients(basePackages = {"com.ws.icloud.*.*.client"})
 public class UserApplication {
